@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
-   int i, j, count, temp, number[25];
+   int i, j, count, temp;
    printf("How many numbers u are going to enter: ");
    scanf("%d",&count);
+   int number[count];
    for(i=0;i<count;i++)
     number[i] = rand() % 100 + 1;
    printf("Elements before swapping\n");
