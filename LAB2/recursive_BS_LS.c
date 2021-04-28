@@ -36,9 +36,10 @@ int mid,swap;
 }
 int main()
 {
-    int arr[100],t,x,pos,low,high,position,a[100],swap;
+    int t,x,pos,low,high,position,swap;
     printf("enter the no of elems you want to enter in the array\n");
     scanf("%d",&t);
+    int arr[t],a[t];
     for(int i=0;i<t;i++)
     arr[i] = rand() % 100 + 1;
     for(int i=0;i<t;i++)
