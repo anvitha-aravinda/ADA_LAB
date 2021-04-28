@@ -9,15 +9,16 @@ int main(){
    printf("Elements before swapping\n");
    for(i=0;i<count;i++)
    printf("%d\n",number[i]);
-   for(i=0;i<count;i++){
-      for(j=i+1;j<count;j++){
-         if(number[i]>number[j]){
-            temp=number[i];
-            number[i]=number[j];
-            number[j]=temp;
-         }
+   for(i=1;i<count;i++){
+      temp=number[i];
+      j=i-1;
+      while((temp<number[j])&&(j>=0)){
+         number[j+1]=number[j];
+         j=j-1;
       }
+      number[j+1]=temp;
    }
+
 
    printf("Sorted elements: \n");
    for(i=0;i<count;i++)
